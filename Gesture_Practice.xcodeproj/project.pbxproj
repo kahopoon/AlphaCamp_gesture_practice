@@ -288,6 +288,7 @@
 				1112DA231CA3D19B002115E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
