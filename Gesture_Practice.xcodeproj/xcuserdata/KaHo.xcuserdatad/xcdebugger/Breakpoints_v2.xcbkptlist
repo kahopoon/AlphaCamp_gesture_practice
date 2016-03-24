@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Gesture_Practice/ViewController.swift"
-            timestampString = "480511066.706068"
+            timestampString = "480513657.811715"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "swipeAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Gesture_Practice/ViewController.swift"
-            timestampString = "480510861.599677"
+            timestampString = "480513657.811715"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "rightSwipe(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Gesture_Practice/ViewController.swift"
-            timestampString = "480510997.331404"
+            timestampString = "480513657.811715"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "leftSwipe(_:)"
             landmarkType = "5">
          </BreakpointContent>
