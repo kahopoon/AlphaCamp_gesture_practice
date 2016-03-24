@@ -35,7 +35,7 @@ override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageView.image = UIImage(named: imageArray.first!)
-    }
+}
 ```
 at viewDidLoad, just put our initial image.
 
@@ -43,17 +43,17 @@ at viewDidLoad, just put our initial image.
 @IBAction func rightSwipe(sender: AnyObject) {
         let updateShow = currentImage + 1 < imageArray.count ? currentImage + 1 : 0
         swipeAction(updateShow)
-    }
+}
     
-    @IBAction func leftSwipe(sender: AnyObject) {
+@IBAction func leftSwipe(sender: AnyObject) {
         let updateShow = currentImage - 1 >= 0 ? currentImage - 1 : imageArray.indexOf(imageArray.last!)
         swipeAction(updateShow!)
-    }
+}
     
-    func swipeAction(index: Int) {
+func swipeAction(index: Int) {
         imageView.image = UIImage(named: imageArray[index])
         currentImage = index
-    }
+}
 ```
 there are two IBAction drag from our storyboard gesture for left and right swipe. for right swipe, 'updateShow' will be add index by one if within the array bound, if bound out of index, index will be 0 as loading first image again. left swipe is almost the same concept by just reversing number.  
 after got the index number, put it into swipeAction for showing new image and update current image index.
@@ -72,7 +72,7 @@ override func viewDidLoad() {
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.downSwipe))
         swipeDown.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipeDown)
-    }
+}
 ```
 actually i think this is more or less easier than using storyboard dragging in some case.
 at viewDidLoad, we first let UISwipeGestureRecognizer, and set the direction property, and finally add it, that is. for the action part of selector, just call function whatever you want, if parameters needed, add ":" at tail of the function then it will pass the full object of you have let.  
@@ -81,11 +81,11 @@ at viewDidLoad, we first let UISwipeGestureRecognizer, and set the direction pro
 func upSwipe() {
         imageView.image = UIImage(named: imageArray[0])
         currentImage = 0
-    }
+}
     
-    func downSwipe() {
+func downSwipe() {
         imageView.image = UIImage(named: imageArray.last!)
         currentImage = imageArray.indexOf(imageArray.last!)!
-    }
+}
 ```
 in this practice, i just set up swipe for showing first image and down swipe for the last image. pretty simple one.
